@@ -1,0 +1,22 @@
+{
+  "name": "quak",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "serve": "nodemon",
+    "build:windows": "nexe -o dist/quak -t windows-x64-12.18.2",
+    "build:linux": "nexe -o dist/quak -t linux-x64-12.16.2",
+    "build:macos": "nexe -o dist/quak -t mac-x64-12.18.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "lowdb": "^1.0.0",
+    "shortid": "^2.2.15",
+    "socks-proxy-agent": "^5.0.0",
+    "terminal-kit": "^1.41.0"
+  },
+  "devDependencies": {
+    "nexe": "^3.3.7",
+    "nodemon": "^2.0.4"
+  }
+}
